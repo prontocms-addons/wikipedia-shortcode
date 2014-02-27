@@ -10,7 +10,7 @@ ShortcodeContainer::add('wikipedia', function($attributes) {
 	);
 	$options = array_merge($defaults, $attributes);
 	$url = 'http://'.$options['language'].'.wikipedia.org/w/index.php?search='.urlencode($wikipedia);
-	return '<a href="'.$url.'" class="wikipedia">'.html($options['text']).'</a>'; 
+	return '<a href="'.$url.'" class="wikipedia">'.html($options['text']).'</a>';
 });
 
 ?>
